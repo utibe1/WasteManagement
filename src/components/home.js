@@ -1,35 +1,30 @@
 import Services from './Services';
 import MyBlogComponent from './myBlogComponent'
 import '../pages/myComponent.css';
-import LandingImage from '../assets/img/LandingImage.png';
 import AboutImage from '../assets/img/AboutImage.png';
 import AboutImage1 from '../assets/img/AboutImage1.png';
 import AboutImage2 from '../assets/img/AboutImage2.png';
 import AboutImage3 from '../assets/img/AboutImage3.png';
 
 const Home = () => {
-  const containerStyle = {
-    background: `linear-gradient(0deg, rgba(0, 0, 0, 0.46) 0%, rgba(0, 0, 0, 0.46) 100%), url(${LandingImage}) 50% / cover no-repeat`,
-  };
 
   return (
     <div>
-      <div
-        className="h-screen relative flex items-center justify-center"
-        style={containerStyle}
-      >
-        <div className="">
-          <h2 className=" font-extrabold text-6xl text-[#FFB967] mt[-10px] mb-5 animate-text-clip">
-            Let’s Make Eket Clean.
-          </h2>
-          <p className="text-lg font-medium text-[#fff] w-full text-center my-3">
-            The very essence of Eket's charm and well-being depends on the
-            cleanliness of its <br />
-            streets, the purity of its waters, and the health of its ecosystems.
-          </p>
-          <button className="bg-[#21752C] font-normal p-3 rounded-lg text-white text-lg block mx-auto mt-5  ">
-            Request Pickup
-          </button>
+      <div className="Homecontainer h-screen flex flex-col justify-center items-center">
+        <div className="enter">
+          <div className="text-center">
+            <h2 className=" font-extrabold text-6xl text-[#FFB967] mb-5">
+              Let’s Make Eket Clean.
+            </h2>
+            <p className="text-lg font-medium text-[#fff] w-full text-center my-3">
+              The very essence of Eket's charm and well-being depends on the
+              cleanliness of its <br />
+              streets, the purity of its waters, and the health of its ecosystems.
+            </p>
+            <button className="bg-[#21752C] font-normal p-3 rounded-lg text-white text-lg block mx-auto mt-5  ">
+              Request Pickup
+            </button>
+          </div>
         </div>
       </div>
       <div className="container mx-auto">

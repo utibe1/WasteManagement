@@ -1,76 +1,46 @@
-/* Keyframe animations */
+.Homecontainer{
+  background: linear-gradient(0deg, rgba(0, 0, 0, 0.4) 0%, rgba(0, 0, 0, 0.4) 100%), url('../assets/img/LandingImage.png');
+  /* animation: slidein 2s infinite alternate;
+  background-position: center;
+  position: relative; */
+  background-size:cover;
+  -webkit-animation: slidein 100s;
+  animation: slidein 100s;
 
+  -webkit-animation-fill-mode: forwards;
+  animation-fill-mode: forwards;
 
-@keyframes image-in {
+  -webkit-animation-iteration-count: infinite;
+  animation-iteration-count: infinite;
+
+  -webkit-animation-direction: alternate;
+  animation-direction: alternate;              
+}
+
+@-webkit-keyframes slidein {
+from {background-position: top; background-size:0px; }
+to {background-position: 0px 0px;background-size:100px;}
+}
+
+@keyframes slidein {
+from {background-position: top;background-size:3000px; }
+to {background-position: -100px 0px;background-size:2750px;}
+
+}
+
+.enter{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  color: white;
+}
+
+/* @keyframes slidein {
   from {
-    clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
+    background-position: top;
   }
   to {
-    clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+    background-position: 0px 0;
   }
-}
-
-@keyframes text-clip {
-  from {
-    clip-path: polygon(0% 100%, 100% 100%, 100% 100%, 0% 100%);
-  }
-  to {
-    clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
-  }
-}
-
-@keyframes outer-left {
-  from {
-    transform: translateX(50%);
-  }
-  to {
-    transform: none;
-  }
-}
-
-@keyframes inner-left {
-  from {
-    transform: translateX(-50%);
-  }
-  to {
-    transform: none;
-  }
-}
-
-/* Custom styles for your component */
-.title {
-  padding-left: 1em;
-  grid-column: 1 / -1;
-  grid-row: 1;
-  font-family: "Prata", serif;
-  font-size: 8vw;
-  width: 100%;
-  z-index: 2;
-}
-
-.title-inner {
-  display: inline-block;
-  animation: inner-left 1s 1s ease both;
-}
-
-.cafe-inner {
-  display: inline-block;
-  animation: inner-left 1s 1s ease both, text-clip 1s 0s cubic-bezier(0.5, 0, 0.1, 1) both;
-}
-
-.mozart-inner {
-  animation: text-clip 1s 0s cubic-bezier(0.5, 0, 0.1, 1) both;
-}
-
-.cafe {
-  animation: outer-left 1s 1s cubic-bezier(0.5, 0, 0.1, 1) both;
-}
-
-.image {
-  animation: image-in 1s cubic-bezier(0.5, 0, 0.1, 1) 2s backwards;
-  background-repeat: no-repeat !important;
-}
-
-
-
-/* Additional styles or overrides as needed */
+} */

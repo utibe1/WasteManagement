@@ -2,6 +2,7 @@ import { Link } from 'react-router-dom'
 import footerImage from '../assets/img/footerImage.png'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faYoutube, faFacebook, faTwitter, faInstagram } from '@fortawesome/free-brands-svg-icons'
+import { faLocationDot, faPhone } from '@fortawesome/free-solid-svg-icons'
 
 const Footer = () => {
   return(
@@ -18,8 +19,8 @@ const Footer = () => {
           <Link className='block my-4'>Blog</Link>
         </div>
         <div>
-          <span className='block my-4'>Address: 5 Eket -oron road,eket</span>
-          <span className='block my-4' >Call Customer Care: 070-0000-0000</span>
+          <span className='block my-4'><FontAwesomeIcon icon={faLocationDot}></FontAwesomeIcon> Address: 5 Eket -oron road,eket</span>
+          <span className='block my-4' ><FontAwesomeIcon icon={faPhone}></FontAwesomeIcon> Call Customer Care: 070-0000-0000</span>
           <span className='block my-4'>eketwastemanagement@gmail.com</span> 
         </div>
         <div>

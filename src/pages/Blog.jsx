@@ -3,9 +3,11 @@ import fullBlogImage2 from '../assets/img/fullBlogimage2.png'
 
 const Blog = () => {
   return (
-    <div className="container mx-auto" >
+    <div className="container mx-auto">
       <h2 className="font-bold text-3xl text-center my-14">Sustainable Education: Navigating the <br /> World of Waste Management</h2>
-      <img  className='w-full mx-4' src={fullBlogImage} alt="blog" />
+      <div className="flex items-center justify-center mb-20">
+        <img src={fullBlogImage} alt="waste motor" />
+      </div>
       <h1 className='font-bold text-3xl my-8'>Introduction:</h1>
       <p className='text-2xl font-medium'>
         In today's rapidly changing world, the importance of waste management cannot be overstated. The impact of improper waste disposal is felt on a global scale, affecting the environment, human health, and even our economy. As responsible citizens of the planet, it is our duty to educate ourselves and others about the best practices for waste management. In this blog post, we will delve into the world of waste management, exploring its significance, challenges, and solutions.
@@ -25,7 +27,9 @@ const Blog = () => {
         <span className='block mx-2'>3.</span> <p>Resource Conservation: Proper waste management can reduce the strain on our natural resources.</p>
         </div>
       </p>
-      <img className='w-full mx-4' src={fullBlogImage2} alt="" />
+      <div className="flex items-center justify-center my-20">
+        <img src={fullBlogImage2} alt="waste motor" />
+      </div>
       <h1 className='font-bold text-3xl mt-32 mb-8'>
         Challenges in Waste Management:
       </h1>
