@@ -1,5 +1,6 @@
 import { NavLink } from 'react-router-dom'
 import React, { useState } from 'react';
+import { Link } from 'react-router-dom';
 
 const Navbar = () => {
  const [isOpen, setIsOpen] = useState(false);
@@ -47,7 +48,9 @@ const Navbar = () => {
         </div>
       </div>
       <div>
-       <button className="bg-[#21752C] font-normal p-3 rounded-lg text-white text-lg inline-flex items-center">Request Pickup</button>
+       <button className="bg-[#21752C] font-normal p-3 rounded-lg text-white text-lg inline-flex items-center">
+       <Link to='/form'>Request Pickup</Link>
+       </button>
        </div>
     </nav>
   

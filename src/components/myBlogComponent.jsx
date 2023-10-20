@@ -1,4 +1,5 @@
 import BlogImage from '../assets/img/BlogImage.png'
+import { Link } from 'react-router-dom'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faArrowRightLong } from '@fortawesome/free-solid-svg-icons'
 
@@ -14,8 +15,10 @@ const MyBlogComponent = () => {
             Together, we are embarking on a journey to transform Eket's waste management landscape, and it starts with the mantra, "Let's Make Eket Clean.
           </p>
           <div className="flex items-center">
+          <Link to='/blog' className='flex items-center'>
             <button className='text-[#21752C] mr-4 text-xl'>Read more</button>
             <FontAwesomeIcon className='text-4xl text-[#FFB957]' icon={faArrowRightLong}></FontAwesomeIcon>
+          </Link>
           </div>
         </div>
         <div class="w-[532px] h-[550px] pt-8 p-6 rounded-lg multi-shadow border border-[#FFB967]">
@@ -25,8 +28,10 @@ const MyBlogComponent = () => {
             Together, we are embarking on a journey to transform Eket's waste management landscape, and it starts with the mantra, "Let's Make Eket Clean.
           </p>
           <div className="flex items-center">
+            <Link to='/readmore' className='flex items-center'>
             <button className='text-[#21752C] mr-4 text-xl'>Read more</button>
             <FontAwesomeIcon className='text-4xl text-[#FFB957]' icon={faArrowRightLong}></FontAwesomeIcon>
+            </Link>
           </div>
         </div>
       </div>

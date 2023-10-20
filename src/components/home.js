@@ -1,4 +1,5 @@
 import Services from './Services';
+import { Link } from 'react-router-dom';
 import MyBlogComponent from './myBlogComponent'
 import '../pages/myComponent.css';
 import AboutImage from '../assets/img/AboutImage.png';
@@ -21,8 +22,8 @@ const Home = () => {
               cleanliness of its <br />
               streets, the purity of its waters, and the health of its ecosystems.
             </p>
-            <button className="bg-[#21752C] font-normal p-3 rounded-lg text-white text-lg block mx-auto mt-5  ">
-              Request Pickup
+            <button className="bg-[#21752C] font-normal p-3 rounded-lg text-white text-lg block mx-auto mt-5">
+              <Link to='/form'>Request Pickup</Link>
             </button>
           </div>
         </div>
