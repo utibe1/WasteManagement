@@ -33,16 +33,16 @@ const Navbar = () => {
       </div>
       <div className={`block lg:flex ${isOpen ? "block" : "hidden"}`}>
         <div className="lg:flex-grow ms-[20px]">
-         <NavLink className="block mt-4 lg:inline-block lg:mt-0 mr-8 text-xl font-medium">
+         <NavLink to='#home' className="block mt-4 lg:inline-block lg:mt-0 mr-8 text-xl font-medium">
           Home
          </NavLink>
-          <NavLink className="block mt-4 lg:inline-block lg:mt-0 mr-8 text-xl font-medium">
+          <NavLink to='#about' className="block mt-4 lg:inline-block lg:mt-0 mr-8 text-xl font-medium">
             About Us
           </NavLink>
-          <NavLink className="block mt-4 lg:inline-block lg:mt-0 mr-8 text-xl font-medium">
+          <NavLink to='#service' className="block mt-4 lg:inline-block lg:mt-0 mr-8 text-xl font-medium">
            Services
           </NavLink>
-          <NavLink className="block mt-4 lg:inline-block lg:mt-1  mr-8 font-medium text-xl">
+          <NavLink to='#blog' className="block mt-4 lg:inline-block lg:mt-1  mr-8 font-medium text-xl">
             Blog
           </NavLink>
         </div>

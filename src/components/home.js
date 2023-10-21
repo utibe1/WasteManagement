@@ -1,5 +1,6 @@
 import Services from './Services';
 import { Link } from 'react-router-dom';
+import './Navbar';
 import MyBlogComponent from './myBlogComponent'
 import '../pages/myComponent.css';
 import AboutImage from '../assets/img/AboutImage.png';
@@ -11,7 +12,7 @@ const Home = () => {
 
   return (
     <div>
-      <div className="Homecontainer h-screen flex flex-col justify-center items-center">
+      <div id='home' className="Homecontainer h-screen flex flex-col justify-center items-center">
         <div className="enter">
           <div className="text-center">
             <h2 className=" font-extrabold text-6xl text-[#FFB967] mb-5">
@@ -28,7 +29,7 @@ const Home = () => {
           </div>
         </div>
       </div>
-      <div className="container mx-auto">
+      <div className="container mx-auto" id='about'>
         <h1 className="text-center font-bold text-4xl mt-20 mb-10">About Us</h1>
         <div className="block lg:grid grid-cols-2 gap-4">
           <div className="mx-auto w-[500px]">
@@ -76,9 +77,9 @@ const Home = () => {
         </div>
       </div>
       <hr className="my-20 w-full text-[#21752C]" />
-      {<Services />}
+      {<Services id='service'/>}
       <hr className="my-20 w-full text-[#21752C]" />
-      <MyBlogComponent />
+      <MyBlogComponent id='blog' />
       <hr className="my-20 w-full text-[#21752C]" />
     </div>
   );
