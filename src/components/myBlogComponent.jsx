@@ -7,8 +7,8 @@ const MyBlogComponent = () => {
   return (
     <div className='container mx-auto'>
       <h1 className='text-center font-bold text-4xl mt-20 mb-10'>Blog</h1>
-      <div className='flex justify-around '>
-        <div className="w-[532px] h-[550px] pt-8 p-6 rounded-lg multi-shadow border border-[#FFB967]">
+      <div className='block lg:flex items-center justify-between'>
+        <div className="lg:w-full w-64 mx-auto mb-5 h-[550px] pt-8 p-6 rounded-lg multi-shadow border border-[#FFB967] lg:mx-12">
          <img src={BlogImage} alt="Blog-img" className='w-full'/>
          <h1 className='text-3xl my-3 font-bold'>Educate Blog</h1>
           <p className='text-xl'>
@@ -21,7 +21,7 @@ const MyBlogComponent = () => {
           </Link>
           </div>
         </div>
-        <div class="w-[532px] h-[550px] pt-8 p-6 rounded-lg multi-shadow border border-[#FFB967]">
+        <div class="lg:w-full w-64 mx-auto mb-5 lg:mx-12 h-[550px] pt-8 p-6 rounded-lg multi-shadow border border-[#FFB967]">
          <img src={BlogImage} alt="Blog-img" className='full'/>
          <h1 className='text-3xl my-3 font-bold'>Educate Blog</h1>
           <p className='text-xl'>

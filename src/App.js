@@ -5,6 +5,7 @@ import Footer from './components/footer';
 import Blog from './pages/Blog';
 import InnovativeSolution from './pages/InnovativeSolution';
 import Form from './pages/Form';
+import Example from './pages/Example';
 
 const App = () => {
   return (
@@ -15,6 +16,7 @@ const App = () => {
         <Route path='/form' element={<Form />}/>
         <Route path="/blog" element={<Blog />} />
         <Route path='/readmore' element={<InnovativeSolution />} />
+        <Route path='/example' element={<Example />} />
       </Routes>
       <Footer />
     </>

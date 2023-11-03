@@ -4,16 +4,9 @@
   background-position: center;
   position: relative; */
   background-size:cover;
-  -webkit-animation: slidein 100s;
   animation: slidein 100s;
-
-  -webkit-animation-fill-mode: forwards;
   animation-fill-mode: forwards;
-
-  -webkit-animation-iteration-count: infinite;
   animation-iteration-count: infinite;
-
-  -webkit-animation-direction: alternate;
   animation-direction: alternate;              
 }
 
@@ -36,6 +29,20 @@ to {background-position: -100px 0px;background-size:2750px;}
   color: white;
 }
 
+
+@media (max-width: 768px) {
+  .Homecontainer {
+    animation: none; /* Remove animation on smaller screens */
+    background-size: cover; /* Ensure the background covers the entire container */
+  }
+}
+
+@media (max-width: 480px) {
+  .Homecontainer {
+    background: linear-gradient(0deg, rgba(0, 0, 0, 0.4) 0%, rgba(0, 0, 0, 0.4) 100%),
+      url('../assets/img/LandingImage.png'); /* Change the background image for smaller screens */
+  }
+}
 /* @keyframes slidein {
   from {
     background-position: top;
