@@ -12,7 +12,7 @@ const Home = () => {
 
   return (
     <div>
-      <div id='home' className="Homecontainer h-screen flex flex-col justify-center items-center">
+      <div id='home' className="Homecontainer h-96 lg:h-screen flex flex-col justify-center items-center">
         <div className="enter">
           <div className="text-center">
             <h2 className=" font-extrabold lg:text-6xl text-[#FFB967] mb-5 text-4xl">
