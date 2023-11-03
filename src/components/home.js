@@ -16,7 +16,7 @@ const Home = () => {
         <div className="enter">
           <div className="text-center">
             <h2 className=" font-extrabold lg:text-6xl text-[#FFB967] mb-5 text-4xl">
-              Let’s Make Eket Clean.
+              Let's Make Eket Clean.
             </h2>
             <p className="lg:text-lg text-lg font-medium text-[#fff] w-74 lg:w-full text-center my-3">
               The very essence of Eket's charm and well-being depends on the
