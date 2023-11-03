@@ -32,7 +32,7 @@ const Home = () => {
       <div className="container mx-auto" id='about'>
         <h1 className="text-center font-bold text-4xl mt-20 mb-10">About Us</h1>
         <div className="block lg:grid grid-cols-2 gap-4">
-          <div className="lg:mx-auto ms-3 lg:w-[500px] w-72 text-center lg:text-start">
+          <div className="mx-auto lg:w-[500px] w-72 text-center lg:text-start">
             <p className="lg:text-lg font-normal lg:mt-4 text-sm">
               This code sets up a basic waste management website using Node.js
               and Express.js, serving static assets and rendering dynamic HTML
