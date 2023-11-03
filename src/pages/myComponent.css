@@ -42,6 +42,13 @@ to {background-position: -100px 0px;background-size:2750px;}
     background: linear-gradient(0deg, rgba(0, 0, 0, 0.4) 0%, rgba(0, 0, 0, 0.4) 100%),
       url('../assets/img/LandingImage.png'); /* Change the background image for smaller screens */
   }
+
+  @keyframes slidein {
+    from {background-position: top;background-size:3000px; }
+    to {background-position: -10px 0px;background-size:2500px;}
+    
+    }
+
 }
 /* @keyframes slidein {
   from {
