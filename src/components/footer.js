@@ -8,7 +8,7 @@ const Footer = () => {
   return(
     <div className="">
       <h1 className='text-5xl ms-16 text-[#FFB967] font-bold'>Ekid<span className='text-[#21752C] '>Waste</span></h1>
-      <div className='block lg:flex justify-around mt-5'>
+      <div className='block lg:flex justify-around mt-5 lg:mx-auto ms-12'>
         <div>
           <img src={footerImage} alt="Eket-Logo" />
         </div>

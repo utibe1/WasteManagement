@@ -15,10 +15,10 @@ const Home = () => {
       <div id='home' className="Homecontainer h-screen flex flex-col justify-center items-center">
         <div className="enter">
           <div className="text-center">
-            <h2 className=" font-extrabold lg:text-6xl text-[#FFB967] mb-5 text-2xl">
+            <h2 className=" font-extrabold lg:text-6xl text-[#FFB967] mb-5 text-3xl">
               Let’s Make Eket Clean.
             </h2>
-            <p className="lg:text-lg text-sm font-medium text-[#fff] w-74 lg:w-full text-center my-3">
+            <p className="lg:text-lg text-md font-medium text-[#fff] w-74 lg:w-full text-center my-3">
               The very essence of Eket's charm and well-being depends on the
               cleanliness of its <br />
               streets, the purity of its waters, and the health of its ecosystems.
@@ -43,12 +43,12 @@ const Home = () => {
               management website using Node.js and Express.js, serving static
               assets and rendering dynamic HTML pages with EJS templates.
             </p>
-            <button className="bg-[#21752C] font-normal px-10 p-3 rounded-lg text-white text-lg mt-20">
+            <button className="bg-[#21752C] font-normal px-10 p-3 rounded-lg text-white text-lg mt-20 mb-2">
               Learn More
             </button>
           </div>
 
-          <div className="">
+          <div className="lg:ms-0 ms-4">
             <div className="block lg:flex">
               <img
                 src={AboutImage}
