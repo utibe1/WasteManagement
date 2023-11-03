@@ -15,10 +15,10 @@ const Home = () => {
       <div id='home' className="Homecontainer h-screen flex flex-col justify-center items-center">
         <div className="enter">
           <div className="text-center">
-            <h2 className=" font-extrabold lg:text-6xl text-[#FFB967] mb-5 text-3xl">
+            <h2 className=" font-extrabold lg:text-6xl text-[#FFB967] mb-5 text-4xl">
               Let’s Make Eket Clean.
             </h2>
-            <p className="lg:text-lg text-md font-medium text-[#fff] w-74 lg:w-full text-center my-3">
+            <p className="lg:text-lg text-lg font-medium text-[#fff] w-74 lg:w-full text-center my-3">
               The very essence of Eket's charm and well-being depends on the
               cleanliness of its <br />
               streets, the purity of its waters, and the health of its ecosystems.
